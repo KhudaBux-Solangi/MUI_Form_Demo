@@ -32,14 +32,14 @@ const FormComponent = () => {
     const newErrors = {};
 
     // Name validation
-    if (!name) newErrors.name = "Name required hai!";
+    if (!name) newErrors.name = "Name required!";
 
     // Email validation
-    if (!email) newErrors.email = "Email required hai!";
-    else if (!/\S+@\S+\.\S+/.test(email)) newErrors.email = "Email galat hai!";
+    if (!email) newErrors.email = "Email required!";
+    else if (!/\S+@\S+\.\S+/.test(email)) newErrors.email = "Email required!";
 
     // Age validation
-    if (!age) newErrors.age = "Age required hai!";
+    if (!age) newErrors.age = "Age required!";
     else if (isNaN(age)) newErrors.age = "Age number honi chahiye!";
 
     // If no errors, show success message
@@ -181,8 +181,13 @@ const FormComponent = () => {
           }}
         >
           Submit
-        </Button>
+        </Button>  
+        
+          
       </form>
+
+
+
     </Box>
   );
 };

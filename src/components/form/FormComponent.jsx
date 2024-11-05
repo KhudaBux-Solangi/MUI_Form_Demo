@@ -87,7 +87,7 @@ const FormComponent = () => {
             marginBottom: '20px',
           }}
         >
-          Sanaullah Addmission Form 
+          Addmission Form 
         </Typography>
 
         {/* Name Field */}
